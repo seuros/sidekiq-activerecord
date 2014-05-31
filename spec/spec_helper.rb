@@ -1,4 +1,6 @@
-require 'byebug'
+unless RUBY_PLATFORM == 'java'
+  require 'byebug'
+end
 require 'sidekiq'
 require 'sidekiq/activerecord'
 require 'factory_girl'
